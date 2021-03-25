@@ -26,6 +26,10 @@ public:
 
     int CalculatePercent (  ) const; // for calculating player's percent of knowledge
 
+    void NewQuiz (); // for create a new quiz
+
+    Void ExportQuiz (); // gor export
+
     void run(); // Run the quiz
 };
 #endif // QUIZ_H_INCLUDED
