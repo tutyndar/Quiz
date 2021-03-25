@@ -21,10 +21,10 @@ using namespace std;
 class Quiz
 {
 private:
-    int percent; // player's percent of knowledge of the faculty
-public:
+    int score; // player's score
+    int max; // the maximum score
 
-    int CalculatePercent (  ) const; // for calculating player's percent of knowledge
+    int CalculateScore (  ) const; // for calculating player's score
 
     void NewQuiz (); // for create a new quiz
 
