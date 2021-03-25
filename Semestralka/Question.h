@@ -19,12 +19,32 @@ class Question
 {
 private:
     int variant; //variant of the test - 1 or 2
-    int number; // number of the question in the test
+    int numberOfQuestion; // number of the question in the test
     string question;
-    int answer0;
-    string answer1;
+
+    int AnswerScore (); // for answer's evaluation
+
 public:
-    int AnswerScore;
+
+    Question ( string question){
+
+        string answer;
+    }
+
+    ~Question ( ){
+
+    }
+
+    void SetQuestion (string question){
+
+    }
+
+    int GetVariant (){
+
+    }
+    int GetNumberOfQuestion (){
+
+    }
 };
 
 #endif //UNTITLED14_QUESTION_H

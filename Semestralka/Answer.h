@@ -15,15 +15,25 @@
 
 using namespace std;
 
-class Answer
-{
+class Answer {
 private:
     int variant; //variant of the test - 1 or 2
-    int number; // number of the question in the test
-    string question;
+    int numberOfQuestion; // number of the question in the test
+
+    int AnswerScore();
+
 public:
 
-    int AnswerScore;
-};
+    Answer ( int numberOfQuestion, int variant){
 
+    }
+
+    ~Answer ( ){
+
+    }
+
+    int GetVariant ();
+    int GetNumberOfQuestion ();
+
+};
 #endif //MAIN_CPP_ANSWER_H
