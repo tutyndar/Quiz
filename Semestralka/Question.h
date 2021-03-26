@@ -21,12 +21,13 @@ private:
     int variant; //variant of the test - 1 or 2
     int numberOfQuestion; // number of the question in the test
     string question;
+    string typeOfQuestion;
 
     int AnswerScore (); // for answer's evaluation
 
 public:
 
-    Question ( string question){
+    Question ( string question, string typeOfQuestion){
 
         string answer;
     }

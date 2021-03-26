@@ -17,14 +17,16 @@ using namespace std;
 
 class Answer {
 private:
+
     int variant; //variant of the test - 1 or 2
     int numberOfQuestion; // number of the question in the test
+    int numberOfAnswer;
 
     int AnswerScore();
 
 public:
 
-    Answer ( int numberOfQuestion, int variant){
+    Answer ( int numberOfQuestion, int variant, int numberOfAnswer ){
 
     }
 
@@ -32,8 +34,12 @@ public:
 
     }
 
-    int GetVariant ();
-    int GetNumberOfQuestion ();
+    int GetVariant (){
+
+    };
+    int GetNumberOfQuestion (){
+
+    };
 
 };
 #endif //MAIN_CPP_ANSWER_H
