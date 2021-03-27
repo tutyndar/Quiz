@@ -23,6 +23,8 @@ private:
     string question;
     string typeOfQuestion;
 
+    string variantOfAnswer;
+
     int AnswerScore (); // for answer's evaluation
 
 public:
