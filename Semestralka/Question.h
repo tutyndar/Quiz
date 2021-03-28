@@ -12,42 +12,28 @@
 #include <stdexcept>
 #include <ctype.h>
 #include <limits>
+#include "Answer.h"
 
 using namespace std;
 
 class Question
 {
-private:
-    int variant; //variant of the test - 1 or 2
-    int numberOfQuestion; // number of the question in the test
+protected:
+    int questionId;
     string question;
-    string typeOfQuestion;
-
-    string variantOfAnswer;
-
-    int AnswerScore (); // for answer's evaluation
+    vector<Answer> answers;
 
 public:
 
-    Question ( string question, string typeOfQuestion){
+    Question (int questionId, string question, vector<Answer> answers);
 
-        string answer;
-    }
+    virtual ~Question() {}
 
-    ~Question ( ){
+    virtual int CalculateScore(); // for answer's evaluation
 
-    }
+    //TODO getters
 
-    void SetQuestion (string question){
 
-    }
-
-    int GetVariant (){
-
-    }
-    int GetNumberOfQuestion (){
-
-    }
 };
 
 #endif //UNTITLED14_QUESTION_H

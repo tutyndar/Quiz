@@ -13,6 +13,7 @@
 #include <stdexcept>
 #include <ctype.h>
 #include <limits>
+#include "Question.h"
 
 
 
@@ -24,6 +25,8 @@ private:
     int score; // player's score
     int max; // the maximum score
     int countOfQuestion; // the count of question in the quiz
+    vector<Question> teacherQuiz;
+    vector<Question> studentQuiz;
 
     int CalculateScore (  ) const; // for calculating player's score
 
@@ -32,6 +35,7 @@ private:
     void ExportQuiz (); // for export
 
     void run(); // run the quiz
+
 
 public:
     Quiz (int countOfQuestion){
